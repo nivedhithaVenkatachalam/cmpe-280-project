@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
+    <meta name="author" content="GeeksLabs">
+    <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <title>Creative - Bootstrap Admin Template</title>
+
+    <!-- Bootstrap CSS -->    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <!--external css-->
+    <!-- font icon -->
+    <link href="css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />    
+    <!-- full calendar css-->
+    <link href="assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
+	<link href="assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
+    <!-- easy pie chart-->
+    <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+	<link href="css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
+    <!-- Custom styles -->
+	<link rel="stylesheet" href="css/fullcalendar.css">
+	<link href="css/widgets.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+	<link href="css/xcharts.min.css" rel=" stylesheet">	
+	<link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+  <!-- container section start -->
+  <section id="container" class="">
+     
+      
+      <header class="header dark-bg">
+            <div class="toggle-nav">
+                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
+            </div>
+
+            <!--logo start-->
+            <a href="index.html" class="logo">Live <span class="lite">Wires</span></a>
+            <!--logo end-->
+
+            <div class="nav search-row" id="top_menu">
+                <!--  search form start -->
+                <ul class="nav top-menu">                    
+                    <li>
+                        <form class="navbar-form">
+                            <input class="form-control" placeholder="Search" type="text">
+                        </form>
+                    </li>                    
+                </ul>
+                <!--  search form end -->                
+            </div>
+
+            <div class="top-nav notification-row">                
+                <!-- notificatoin dropdown start-->
+                <ul class="nav pull-right top-menu">
+                    
+                    <!-- task notificatoin start -->
+                    <li id="task_notificatoin_bar" class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="icon-task-l"></i>
+                            <span class="badge bg-important">6</span>
+                        </a>
+                        <ul class="dropdown-menu extended tasks-bar">
+                            <div class="notify-arrow notify-arrow-blue"></div>
+                            <li>
+                                <p class="blue">Games Pending to Try!!</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div class="desc">Frogger Adventure </div>
+                                        <div class="percent">90%</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                                            <span class="sr-only">90% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div class="desc">
+                                            Frogger City Tour
+                                        </div>
+                                        <div class="percent">30%</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                                            <span class="sr-only">30% Complete (warning)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div class="desc">Road Runner Frogger</div>
+                                        <div class="percent">80%</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                            <span class="sr-only">80% Complete</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div class="desc">Frogger 2</div>
+                                        <div class="percent">78%</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%">
+                                            <span class="sr-only">78% Complete (danger)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="external">
+                                <a href="#">See All Tasks</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- task notificatoin end -->
+                    <!-- user login dropdown start-->
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="profile-ava">
+                                <img alt="" src="img/avatar1_small.jpg">
+                            </span>
+                            <span class="username">Prajakta Naik</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <div class="log-arrow-up"></div>
+                            <li class="eborder-top">
+                                <a href="#"><i class="icon_profile"></i> My Profile</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon_chat_alt"></i> Chats</a>
+                            </li>
+                            <li>
+                                <a href="login.html"><i class="icon_key_alt"></i> Log Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- user login dropdown end -->
+                </ul>
+                <!-- notificatoin dropdown end-->
+            </div>
+      </header>      
+      <!--header end-->
+
+      <!--sidebar start-->
+      <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu">                
+                  <li class="active">
+                      <a class="" href="index.html">
+                          <i class="icon_house_alt"></i>
+                          <span>Dashboard</span>
+                      </a>
+                  </li>
+                  <li>                     
+                      <a class="" href="choose-characters.html">
+                          <i class="icon_profile"></i>
+                          <span>Choose Characters</span>
+                          
+                      </a>
+                                         
+                  </li>
+                  <li>
+                      <a class="" href="profile.html">
+                          <i class="fa fa-user-md"></i>
+                          <span>Profile</span>
+                      </a>
+                  </li>
+                  <li>                     
+                      <a class="" href="chart-chartjs.html">
+                          <i class="icon_piechart"></i>
+                          <span>Statistic</span>    
+                      </a>                     
+                  </li>           
+                  
+                  <li>
+                      <a class="" href="basic_table.html">
+                          <i class="icon_table"></i>
+                          <span>Table</span>
+                      </a>
+                  </li> 
+                  <li>
+                      <a class="" href="chat.html">
+                          <i class="icon_chat_alt"></i>
+                          <span>Chat</span>
+                      </a>
+                  </li> 
+                  <li>
+                      <a class="" href="feedback.html">
+                          <i class="icon_document_alt"></i>
+                          <span>Feedback</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="" href="aboutUs.html">
+                          <i class="fa fa-user-md"></i>
+                          <span>AboutUs</span>
+                      </a>
+                  </li> 
+                  
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--sidebar end-->
+      
+      <!--main content start-->
+      <section id="main-content">
+          <section class="wrapper">            
+              <!--overview start-->
+			  <div class="row">
+				<div class="col-lg-12">
+					<h3 class="page-header"><i class="fa fa-laptop"></i> Dashboard</h3>
+					<ol class="breadcrumb">
+						<li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+						<li><i class="fa fa-laptop"></i>Dashboard</li>						  	
+					</ol>
+				</div>
+			</div>
+			
+           <div class="row">
+		    <div class="col-lg-9 col-md-12">
+					
+					<div class="panel panel-default">
+          <div class="panel panel-primary">
+						<div class="panel-heading">
+							<h2><i class="fa fa-map-marker red"></i><strong>Play Game!!</strong></h2>
+							<div class="panel-actions">
+								<a href="index.html#" class="btn-setting"><i class="fa fa-rotate-right"></i></a>
+								<a href="index.html#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
+								<a href="index.html#" class="btn-close"><i class="fa fa-times"></i></a>
+							</div>	
+              </div>
+						</div>
+						<div>
+              <div class="row">  
+                <div class="col-md-12" >
+                  <div class="embed-responsive embed-responsive-16by9" >
+                    <div id="control-panel">
+                        <span class="label label-primary">Lives:</span> <span id="numberOfLives" class="badge">3</span>
+                    </div>
+                    <div id="webgl-container"></div> 
+                  </div>
+                </div>
+              </div>       
+
+              <br>   
+
+              <div class="row">  
+                <div class="col-md-12" >
+                  <div>
+                    <ul id="messages"></ul>
+                    <form action="">
+                    <div class="col-md-4">
+                    <input id="m" autocomplete="off" class="form-control round-input"></div>
+                      <!--<input id="m" autocomplete="off" />--><a class="btn btn-info btn-sm" href="" onclick="return false;" title="Start Chatting!">Send</a>
+                    </form><br>
+                    <a class="btn btn-success btn-lg" href="" title="Adds Tree to the Field!" onclick="AddTree(); return false;">Add Tree!</a>
+                    <a class="btn btn-danger btn-lg" href="" title="Adds Wall to the Field!" onclick="AddWall(); return false;">Add Wall!</a>
+                    <!--<button onclick="AddTree()">Add Tree</button>
+                    <button onclick="AddWall()">Add Wall</button>  -->
+                    <br>                  
+                  </div>
+                </div>
+              </div>       
+            </div>
+	
+					</div>
+				</div>			 
+           </div>  
+            
+		  
+		  <!-- Today status end -->
+		
+			
+          <br><br>
+		
+		
+      </section>
+      <!--main content end-->
+  </section>
+  <!-- container section start -->
+
+    <!-- javascripts -->
+    <script src="js/jquery.js"></script>
+	<script src="js/jquery-ui-1.10.4.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- nice scroll -->
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+    <!-- charts scripts -->
+    <script src="assets/jquery-knob/js/jquery.knob.js"></script>
+    <script src="js/jquery.sparkline.js" type="text/javascript"></script>
+    <script src="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
+    <script src="js/owl.carousel.js" ></script>
+    <!-- jQuery full calendar -->
+    <<script src="js/fullcalendar.min.js"></script> <!-- Full Google Calendar - Calendar -->
+	<script src="assets/fullcalendar/fullcalendar/fullcalendar.js"></script>
+    <!--script for this page only-->
+    <script src="js/calendar-custom.js"></script>
+	<script src="js/jquery.rateit.min.js"></script>
+    <!-- custom select -->
+    <script src="js/jquery.customSelect.min.js" ></script>
+	<script src="assets/chart-master/Chart.js"></script>
+   
+    <!--custome script for all page-->
+    <script src="js/scripts.js"></script>
+    <!-- custom script for this page-->
+    <script src="js/sparkline-chart.js"></script>
+    <script src="js/easy-pie-chart.js"></script>
+	<script src="js/jquery-jvectormap-1.2.2.min.js"></script>
+	<script src="js/jquery-jvectormap-world-mill-en.js"></script>
+	<script src="js/xcharts.min.js"></script>
+	<script src="js/jquery.autosize.min.js"></script>
+	<script src="js/jquery.placeholder.min.js"></script>
+	<script src="js/gdp-data.js"></script>	
+	<script src="js/morris.min.js"></script>
+	<script src="js/sparklines.js"></script>	
+	<script src="js/charts.js"></script>
+	<script src="js/jquery.slimscroll.min.js"></script>
+  <script>
+
+      //knob
+      $(function() {
+        $(".knob").knob({
+          'draw' : function () { 
+            $(this.i).val(this.cv + '%')
+          }
+        })
+      });
+
+      //carousel
+      $(document).ready(function() {
+          $("#owl-slider").owlCarousel({
+              navigation : true,
+              slideSpeed : 300,
+              paginationSpeed : 400,
+              singleItem : true
+
+          });
+      });
+
+      //custom select box
+
+      $(function(){
+          $('select.styled').customSelect();
+      });
+	  
+	  /* ---------- Map ---------- */
+	$(function(){
+	  $('#map').vectorMap({
+	    map: 'world_mill_en',
+	    series: {
+	      regions: [{
+	        values: gdpData,
+	        scale: ['#000', '#000'],
+	        normalizeFunction: 'polynomial'
+	      }]
+	    },
+		backgroundColor: '#eef3f7',
+	    onLabelShow: function(e, el, code){
+	      el.html(el.html()+' (GDP - '+gdpData[code]+')');
+	    }
+	  });
+	});
+
+  </script>
+  
+  
+    
+    <script> 
+      var Client = {
+          MASTER: 0,
+          SLAVE: 1,
+      };
+      
+      var clientType;
+      var startGame = 0;
+    </script>
+
+    <script src="scripts/three.js"></script>
+    <script src="fonts/helvetiker_regular.typeface.js"></script>
+    <script src="scripts/support.js"></script>
+    <script src="scripts/PointerLockControls.js"></script>
+    <script src="scripts/physi.js"></script>
+    <script src="scripts/sceneSetup.js"></script>
+    <script src="scripts/gameControls.js"></script>
+    <script src="scripts/enemy.js"></script>
+    <script src="scripts/text.js"></script>
+    <script src="scripts/player.js"></script>
+    <script src="scripts/pointerLockSetup.js"></script>
+    <script src="scripts/_game.js"></script>
+    
+    <script src="/js/socket.io.js"></script>
+    <script>
+      var socket = io();  
+      
+      function makeid()
+      {
+        var text = "";
+        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+        for( var i=0; i < 5; i++ )
+          text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+        return text;
+      }
+      var thisPlayerId = makeid();
+      player.setPlayerId( thisPlayerId );
+
+      $('form').submit(function(){
+        socket.emit( 'chatPair', $('#m').val() );
+        return false;
+      });
+      
+      socket.on( 'chatPair', function( msg )
+      {
+        
+        $( '#messages' ).append( $( '<li>' ).text( msg ) );
+        
+        if( msg === "start" )
+        {
+          game.resetScene();
+          console.log( "Start Game" );
+        }
+        else if( msg === "move" )
+        {
+          startGame = 1;
+        }
+        else if( msg === "stop" )
+        {
+          startGame = 0;
+        }
+      } );
+      
+      socket.on( 'GetRole', function( msg ) {
+        if( msg === "master" )
+        {
+          clientType = Client.MASTER;          
+        }
+        else
+        {
+          clientType = Client.SLAVE;           
+        }
+          game.init();
+      } );   
+      
+      socket.on( 'StartGame', function( msg ) {
+          startGame = 1;
+          game.newGame();
+        
+          if( clientType === Client.MASTER )
+          {
+            player.createPlayer( 15, thisPlayerId );
+            player.createPlayer( -15, msg.opponentId );
+          }
+          else
+          {
+            player.createPlayer( 15, msg.opponentId );
+            player.createPlayer( -15, thisPlayerId );
+          }
+          // Game is starting
+          player.resetCamera();
+      } );       
+      
+      socket.emit( 'GetRole', { "playerId": thisPlayerId } );
+    
+    </script>
+    
+    
+    <script>
+      // Game communication
+      var objectTypeTree = 0;
+      var objectTypeWall = 1;
+      var objectTypePowerUp = 2;
+      
+      socket.on( 'AddObject', function( msg ) {
+        switch( msg.type )
+        {
+          case objectTypeTree:
+            sceneSetup.createTree( msg.gameObject.x , msg.gameObject.z );
+            break;
+            
+          case objectTypeWall:
+            enemy.createWall( msg.gameObject.x, msg.gameObject.y, msg.gameObject.z );
+            break;
+            
+          case objectTypePowerUp:
+            sceneSetup.createPowerUp( msg.gameObject.x , msg.gameObject.z );
+            break;
+            
+          default:
+            break;
+        }
+      } ); 
+      
+      function AddTree()
+      {
+          player.addTree();
+          UpdateCustomize( thisPlayerId, "tree" );
+      }
+      
+      function AddWall()
+      {
+          player.addWall();
+          UpdateCustomize( thisPlayerId, "wall" );
+      }
+      
+      function AddObject( type, objectToAdd )
+      {
+        socket.emit( 'AddObject', { "type": type, "gameObject": objectToAdd } ); 
+      }
+      
+      socket.on( 'CreateEnemy', function( msg ) {
+        enemy.createEnemy( msg.Origin, msg.Speed, msg.StartPos, msg.zPos );
+      } );
+      
+      function EmitCreateEnemy( origin, speed, startPos, zPos )
+      {        
+        socket.emit( 'CreateEnemy', { "Origin": origin, "Speed": speed, "StartPos": startPos, "zPos": zPos } );
+      }
+      
+      socket.on( 'UpdateEnemyPosition', function( msg ) {
+        enemy.updateEnemy( msg.positions );
+      } );
+      
+      function UpdateEnemyPosition( positions )
+      {
+        socket.emit( 'UpdateEnemyPosition', { "positions": positions } );
+      }
+      
+      socket.on( 'UpdatePlayerPosition', function( msg ) {
+        player.setPlayerPosition( msg.id, msg.playerPosition );
+      } ); 
+      
+      function UpdatePlayerPosition( id, playerPosition )
+      {
+        socket.emit( 'UpdatePlayerPosition', { "id": id, "playerPosition": playerPosition } ); 
+      }
+      
+      socket.on( 'GameWin', function( msg ) {
+        player.gameWin( msg.winnerId );
+      } );
+      
+      function UpdateGameWinner( winnerId, looserId )
+      {
+        socket.emit( 'GameWin', { "winnerId": winnerId, "looserId": looserId } ); 
+      }
+      
+      function UpdatePowerUp( playerId, type )
+      {
+        socket.emit( 'PlayerPowerUp', { "playerId": playerId, "type": type } ); 
+      }
+      
+      function UpdateCustomize( playerId, type )
+      {
+        socket.emit( 'PlayerCustomize', { "playerId": playerId, "type": type } ); 
+      }
+    </script>
+
+  </body>
+</html>

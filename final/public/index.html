@@ -1,0 +1,549 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Frogger Ninja Course 280 San Jose State University</title>
+<link href="css/bootstrap-home.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style-home.css" rel='stylesheet' type='text/css' />
+<style type="text/css">
+img.goog-te-gadget-icon {background-image: none;}
+div.goog-te-gadget-simple { border: none;}
+div.goog-te-gadget-simple{ border-radius: 5px; background: #000000;}
+a.goog-te-menu-value { text-decoration: none; }
+a.goog-te-menu-value > span{ color: #ffffff; font-weight: bold; }
+</style>
+<style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+
+  }
+ 
+  </style>
+  <!--Meta tag SEO-->
+<meta name="description" content="Free multiplayer online frogger game by Prajakta Naik, Nivedhitha Venkatachalam, Sadhana, Saurabh, Darrel Pham. Game built using Socket IO and WebGL for Course 280 Fall 2015 under Professor Chandrasekar Vuppalapati. We have used Bootstrap css HTML5 for front end.">
+<meta name="keywords" content="frogger, multiplayer, socketio, webgl, game">
+<meta name="author" content="LiveWires SJSU, nivedhitha.venkatachalam@sjsu.edu, prajaktasrirang.naik@sjsu.edu, saurabh.deshpande@sjsu.edu">
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google Translator code-->
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript">
+
+var $jt = jQuery.noConflict();
+$jt('document').ready(function () {
+
+    $jt('#google_translate_element').on("click", function () {
+        $("#google_translate_element img").eq(0).remove();
+      var $frame = $jt('.goog-te-menu-frame:first');
+
+      $frame.contents().find(".goog-te-menu2-item div, .goog-te-menu2-item:link div")
+            .css({
+                'color': '#000000',
+                'font-family': 'calibri',
+                'font-weight':'bold',
+
+
+  }).hover(function(){
+   $jt(this).css("background","#FFA500");
+  },function(){
+   $jt(this).css("background","");
+  }); 
+  $(".goog-te-menu-frame").css({
+            '-moz-box-shadow': '0 3px 8px 2px #000000',
+            '-webkit-box-shadow': '0 3px 8px 2px #000000',
+            'box-shadow': '0 3px 8px 2px #000000'
+        });
+   });
+});
+
+</script>
+<script type="text/javascript" src="js/stylinggt.js"></script>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script> 
+<!-- Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<script type="text/javascript">
+
+$(function () {
+  var filterList = {
+
+    init: function () {
+    
+      // MixItUp plugin
+      // http://mixitup.io
+      $('#portfoliolist').mixitup({
+        targetSelector: '.portfolio',
+        filterSelector: '.filter',
+        effects: ['fade'],
+        easing: 'snap',
+        // call the hover effect
+        onMixEnd: filterList.hoverEffect()
+      });       
+    
+    },
+    
+    hoverEffect: function () {
+    
+      // Simple parallax effect
+      $('#portfoliolist .portfolio').hover(
+        function () {
+          $(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+          $(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');       
+        },
+        function () {
+          $(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+          $(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');               
+        }   
+      );        
+    
+    }
+
+  };
+  
+  // Run the show!
+  filterList.init();
+  
+  
+}); 
+</script>
+</head>
+<body>
+<!-- Header Starts Here -->
+<div class="header" id="home">
+  <div class="container">
+    <div class="logo">
+      <a href="index.html"><img src="images/frog.png" alt=""></a>
+    </div>
+    <span class="menu"></span>
+    <div class="navigation">
+      <ul class="navig cl-effect-3" >
+        <li><a href="#">Home</a></li>
+        <li><a href="#signup" data-toggle="modal" data-target=".bs-modal-sm">Sign In/Register</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div>
+      <div id="google_translate_element"></div>
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,fr,hi,ml,te,ta,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+
+      </script>
+    </div>
+      <!-- <div class="search-bar">
+          <input type="text" placeholder="search" required=""  value="search"/>
+          <input type="submit" value="" />
+      </div> -->
+      <div class="clearfix"></div>
+      <script>
+        $( "span.menu" ).click(function() {
+          $( ".navigation" ).slideToggle( "slow", function() {
+            // Animation complete.
+          });
+        });
+      </script>
+
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+<div class="banner"></div>
+<!-- Header Ends Here --> 
+<!-- Modal -->
+  <div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+        <br>
+        <div class="bs-example bs-example-tabs">
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
+              <li class=""><a href="#signup" data-toggle="tab">Register</a></li>
+              <!-- <li class=""><a href="#why" data-toggle="tab">Why?</a></li> -->
+            </ul>
+        </div>
+      <div class="modal-body">
+        <div id="myTabContent" class="tab-content">
+        <!-- <div class="tab-pane fade in" id="why">
+        <p>We need this information so that you can receive access to the site and its content. Rest assured your information will not be sold, traded, or given to anyone.</p>
+        <p></p><br> Please contact <a mailto:href="livewires@gmail.com"></a>livewires@gmail.com</a> for any other inquiries.</p>
+        </div> -->
+        <div class="tab-pane fade active in" id="signin">
+            <form name="login-form" id ="login-form"class="form-horizontal">
+            <fieldset>
+            <!-- Sign In Form -->
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="user_email_login">E-mail:</label>
+              <div class="controls">
+                <input id="user_email_login" name="Email" class="form-control" type="email" placeholder="livewires@sjsu.edu" class="input-large" required="">
+              </div>
+            </div>
+
+            <!-- Password input-->
+            <div class="control-group">
+              <label class="control-label" for="ind_password_login">Password:</label>
+              <div class="controls">
+                <input required="" id="ind_password_login" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
+              </div>
+            </div>
+
+            
+
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="signin"></label>
+              <div class="controls">
+                <center><button id="signin" name="signin" class="btn btn-success" type="button" onclick="storeDetails();">Sign In</button></center>
+              </div>
+            </div>
+            </fieldset>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="signup">
+            <form id="regis" class="form-horizontal" action="home.html" method="post" >
+            <fieldset>
+            <!-- Sign Up Form -->
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="user_email">E-mail:</label>
+              <div class="controls">
+                <input id="user_email" name="Email" class="form-control" type="email" placeholder="livewires@sjsu.edu" class="input-large" required="" />
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="user_name">Alias:</label>
+              <div class="controls">
+                <input id="user_name" name="userid" class="form-control" type="text" placeholder="livewires" class="input-large" required=""/>
+              </div>
+            </div>
+            
+            <!-- Password input-->
+            <div class="control-group">
+              <label class="control-label" for="ind_password">Password:</label>
+              <div class="controls">
+                <input id="ind_password" name="password" class="form-control" type="password" placeholder="********" class="input-large" required=""/>
+                <em>1-8 Characters</em>
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="reenterpassword">Re-Enter Password:</label>
+              <div class="controls">
+                <input id="reenterpassword" class="form-control" name="reenterpassword" type="password" placeholder="********" class="input-large" required=""/>
+              </div>
+            </div>
+            
+            <!-- Multiple Radios (inline) -->
+            <br>
+            <div class="control-group">
+              <label class="control-label" for="humancheck">Humanity Check:</label>
+              <div class="controls">
+                <label class="radio inline" for="humancheck-0">
+                  <input type="radio" name="humancheck" id="humancheck-0" value="robot" checked="checked">I'm a Robot</label>
+                <label class="radio inline" for="humancheck-1">
+                  <input type="radio" name="humancheck" id="humancheck-1" value="human">I'm Human</label>
+              </div>
+            </div>
+            
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="confirmsignup"></label>
+              <div class="controls">
+                <center><button type="submit" id="confirmsignup" name="confirmsignup" class="btn btn-success" onclick="home.html">Sign Up</button></center>
+                <!-- <center><button type="submit" id="confirmsignup" name="confirmsignup" class="btn btn-success" onclick="saveData(event);">Sign Up</button></center> -->
+              </div>
+            </div>
+            </fieldset>
+            </form>
+      </div>
+    </div>
+      </div>
+      <div class="modal-footer">
+      <center>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="banner-bot">
+  <div class="container" id="features">
+    <center><h2><em>Frogger Ninja</em></h2></center>
+    <p><em>Frogger is a classic game and we’re thrilled to present to you Frogger online. The game first appeared in the arcades in 1981 and was an instant hit. Something about the idea of getting a frog across traffic, without getting splat, appealed to gamers worldwide, and has reliably stood the test of time. The game was groundbreaking in the array of hazards little Frogger faced. It became a regular pop culture reference (the famous Seinfeld episode) and has made great fans of many. The interest continues to this day with regular pranks like 5th avenue frogger and Roomba frogger). You can of course play Frogger online here for free.</em></p>
+    <br>
+    <!-- <nav class="cl-effect-3"><a href="#">Learn More</a></nav> -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/8kj0ymx8Pzw" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+<!-- Gallery Starts Here -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="./img/carousel1.jpg" alt="Frogger Ninja" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="./img/carousel2.jpg" alt="Frogger Ninja" width="460" height="345">
+      </div>
+    
+      <div class="item">
+        <img src="./img/carousel3.jpg" alt="Frogger Ninja" width="460" height="345">
+      </div>
+      <div class="item">
+        <img src="./images/frog2.jpg" alt="Frogger Ninja" width="460" height="345">
+      </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Video Part starts Here -->
+<div class="video-serch">
+  <div class="container">
+    <div class="col-md-6 vid-col">
+      <h2 style="color:#fff;">Frogger Story</h2>
+      <p>Frogger is regarded as a classic game from the golden age of video games and is noted for its novel gameplay and theme. Frogger is still popular and versions can be found on many websites. Happy Hopper is a faithful homage to the original and retains much of the original gameplay. Enjoy!</p>
+      <!-- <div class="more">
+        <a href="#">See more videos</a>
+      </div> -->
+    </div> 
+    <div class="col-md-6 vid-coll">
+    <iframe width="400" height="270" src="https://www.youtube.com/embed/ZiNqfyER5Ro" frameborder="0" allowfullscreen> </iframe>
+
+         
+    </div>
+    <div class="clearfix"></div>
+  </div>  
+</div>
+<!-- Video Part Ends Here -->
+<div class="games" style="background:#4fbfa8;">
+  <div class="container" id="contact">
+    
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+var myCenter=new google.maps.LatLng(37.494004,-121.925775);
+function initialize()
+{
+var mapProp = {
+  center: myCenter,
+  zoom:5,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+  title:'San Jose,CA'
+  });
+marker.setMap(map);
+ var infowindow = new google.maps.InfoWindow();
+
+ google.maps.event.addListener(marker,'click', (function(marker,infowindow){ 
+        return function() {
+           infowindow.setContent("San Jose,CA");
+           infowindow.open(map,marker);
+        };
+    })(marker,infowindow));
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+    <div class="contact">
+      <h3 class="page-header">Contact Us</h3>
+      <div class="map">
+         <center><div id="googleMap" style="width:750px;height:380px;"></div></center>
+      </div>
+      
+      <div class="contact-box">
+        
+        <div class="text">
+          <form action="MAILTO:saurabh.deshpande@gmail.com" method="POST">
+          <input id="name" type="text" placeholder="Name" required="" />
+          <input id="subject" type="text" placeholder="Subject" required=""/>
+          <input id="email" type="text" placeholder="Email" required=""/>
+        </div>
+        <div class="text">
+          <textarea id="message" name="message" placeholder="Message" required=""></textarea>
+        </div>
+        <div class="text-but">
+         
+          <input id="submit" type="submit" value="submit" />
+        </div> 
+ </form>
+      </div>
+    </div>
+     
+      <div class="address-box">
+        <h3 class="page-header">Address</h3>
+        <h4>San Jose State University</h4>
+        <p>1 Washington Sq, San Jose, CA 95192<br>
+        socket-io-280.herokuapp.com<br>
+        mailto: livewires@sjsu.edu</p>
+       
+        <p>(408) 924-1000</p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer Starts Here -->
+<div class="footer"><center>
+    <a class="twitter-timeline"  width="600" height="120" href="https://twitter.com/hashtag/livewires_frogger" data-widget-id="667115431811944448">#livewires_frogger Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <p>Copyright &copy; Live Wires 2015</p>
+  <div class="container">
+    <ul class="social">
+      <li><a href="https://www.facebook.com/LiveWires-Frogger-925144020915099/?skip_nax_wizard=true" target="_blank"><i class="fa"></i></a></li>
+      <li><a href="https://twitter.com/hashtag/livewires_frogger?ref_src=twsrc%5Etfw" target="_blank"><i class="fb"></i></li>
+      <li><a href="https://plus.google.com/u/1/115140552490780114866/posts" target="_blank"><i class="fc"></i></a></li>
+    </ul>
+  </div>
+  </center>
+</div>
+<!-- Footer Ends Here -->
+<script type="text/javascript">
+            $(function(){       
+                $('#select_link').click(function(e){
+                    e.preventDefault();
+                    console.log('select_link clicked');
+                    
+                     /*$.ajax({
+                        dataType: 'jsonp',
+                        data: "data=yeah",            
+                        jsonp: 'callback',
+                        url: 'http://localhost:3000/endpoint?callback=?',           
+                        success: function(data) {
+                            console.log('success');
+                            console.log(JSON.stringify(data));
+                        }
+                    });*/
+          var data = {};
+          data.title = "title";
+          data.message = "message";
+          
+          $.ajax({
+            type: 'POST',
+            data: JSON.stringify(data),
+                contentType: 'application/json',
+                        url: 'http://localhost:3000/endpoint',            
+                        success: function(data) {
+                            console.log('success');
+                            console.log(JSON.stringify(data));
+                        }
+                    });
+          /*$.ajax('http://localhost:3000/endpoint', {
+                  type: 'POST',
+                  data: JSON.stringify(data),
+                  contentType: 'application/json',
+                  success: function() { console.log('success');},
+                  error  : function() { console.log('error');}
+          });*/
+                });       
+            });
+        </script>
+        <!--Store in Session storage-->
+        <script>
+        function storeDetails(){
+                var user_email_login = document.getElementById('user_email_login').value;
+                //var ind_password_login = document.getElementById('ind_password_login').value;
+                /*if(user_email_login==null || ind_password_login==null)
+                {
+                  document.myform.action ='#';
+                  alert('Fields are empty');
+                  return false;
+                }*/
+                if(!user_email_login){
+                  alert("Please enter email");
+                }
+               /* else if(!ind_password_login)
+                {
+                  alert ("Please enter password");
+                }*/
+      localStorage.setItem("user_email_login", user_email_login);
+      //localStorage.setItem("ind_password_login", ind_password_login);
+
+     // if((user_email_login!="")&&(ind_password_login!="")){
+      if((user_email_login!="")){
+
+              window.open("home.html","_self");
+    }
+      //document.myform.action ='home.html';
+}
+        </script>
+        <!--Store in mysql storage-->
+<script>
+    
+      function saveData(event){ 
+                var httpRequest;
+var form = document.getElementById("regis");
+        event.preventDefault();         
+        //var isValid = formValidation();
+        isValid=true;
+        if(isValid){      
+            var user_name = document.getElementById('user_name').value;
+                var user_email = document.getElementById('user_email').value;
+                var ind_password = document.getElementById('ind_password').value;
+                                
+            var data = {
+              "user_name": user_name,
+                      "user_email" : user_email,
+                      "ind_password" : ind_password,
+             }
+            console.log(data);
+                    httpRequest = new XMLHttpRequest();
+                    httpRequest.onreadystatechange = handleResponse;
+                    httpRequest.open("POST", form.action);
+                    httpRequest.setRequestHeader("Content-Type", "application/json");
+                    httpRequest.send(JSON.stringify(data));
+                    }
+                    function handleResponse() {
+                    if (httpRequest.readyState == 4 && httpRequest.status == 200) {
+                       // document.getElementById("error").innerHTML
+                    //= httpRequest.responseText;
+                    console.log("Account has been created successfully");
+                         getElement('error').innerHTML = "<li> Account has been created successfully.</li>";
+                    }
+                    else if(httpRequest.status==404){
+                        //document.getElementById("error").innerHTML= httpRequest.responseText;
+                        console.log("failed");
+                    }
+                    }
+
+            
+      }     
+      
+        
+    </script>
+    <script src="./bin/contact_me.php"></script>
+</body>
+</html>

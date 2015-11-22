@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
+    <meta name="author" content="GeeksLabs">
+    <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <title>Frogger Ninja</title>
+
+    <!-- Bootstrap CSS -->    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <!--external css-->
+    <!-- font icon -->
+    <link href="css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />    
+    <!-- easy pie chart-->
+    <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+	<link href="css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
+    <!-- Custom styles -->
+	<link rel="stylesheet" href="css/fullcalendar.css">
+	<link href="css/widgets.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+	<link href="css/xcharts.min.css" rel=" stylesheet">	
+	<link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet">
+
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+<!-- Google Translator code-->
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <script src="js/bootstrap-paginator.min.js"></script>
+    <style type="text/css">
+img.goog-te-gadget-icon {background-image: none;}
+div.goog-te-gadget-simple { border: none;}
+div.goog-te-gadget-simple{ border-radius: 5px; background: #000000;}
+a.goog-te-menu-value { text-decoration: none; }
+a.goog-te-menu-value > span{ color: #ffffff; font-weight: bold; }
+</style>
+
+    <style>
+ footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 10px;
+      position: absolute;
+      width: 100%;
+      margin: 0 30px -155px auto;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+</style>
+<script>
+  $(function() {
+    var availableTags = [
+      "Dashboard Page",
+      "Instructions Page",
+      "Profile Page",
+      "Statistics Page",
+      "Summary Page",
+      "Messenger Page",
+      "Charachter Choice Page",
+      "About Us",
+      "Home Page",
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  
+  });
+  </script>
+  </head>
+
+  <body>
+  <!-- container section start -->
+  <section id="container" class="">
+     
+      
+      <header class="header dark-bg">
+            <div class="toggle-nav">
+                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
+            </div>
+
+            <!--logo start-->
+            <a href="home.html" class="logo">Live <span class="lite">Wires</span></a>
+            <!--logo end-->
+
+            <div class="nav search-row" id="top_menu">
+                <!--  search form start -->
+                <ul class="nav top-menu">                    
+                    <li>
+                        <form class="navbar-form">
+                          <div class="ui-widget">
+                            <input id="tags" class="form-control" placeholder="Search" type="text">
+                          </div>
+                        </form>
+                    </li>                    
+                </ul>
+                <!--  search form end -->                
+            </div>
+
+            <div class="nav search-row" id="top_menu">
+                <!--  search form start -->
+                <ul class="nav top-menu">                    
+                    <li>
+                        <form class="navbar-form">
+                           <div id="google_translate_element"></div>
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,fr,hi,ml,te,ta,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+
+      </script>
+                        </form>
+                    </li>                    
+                </ul>
+                <!--  search form end -->                
+            </div>
+            <div>
+           
+            </div>
+            <div class="top-nav notification-row">                
+                <!-- notificatoin dropdown start-->
+                    <!-- user login dropdown start-->
+                        <a href="#">
+                            <span class="profile-ava">
+                                <img alt="" src="images/user.png">
+                            </span>
+                            <span id="user_email_login"></span>
+                            <span class="username">Welcome!!</span>
+                            
+                        </a>
+                        <a href="index.html" data-toggle="tooltip" data-placement="left" title="Logout" onclick="clearLocal();">
+              <span class="glyphicon glyphicon-log-out"></span>
+            </a>
+                    <!-- user login dropdown end -->
+                <!-- notificatoin dropdown end-->
+            </div>
+      </header>      
+      <!--header end-->
+
+      <!--sidebar start-->
+      <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu">                
+                  <li class="active">
+                      <a class="" href="home.html">
+                          <i class="icon_house_alt"></i>
+                          <span>Dashboard</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="" href="profile.html">
+                          <i class="fa fa-user-md"></i>
+                          <span>Profile</span>
+                      </a>
+                  </li>
+                   <li>
+                      <a class="" href="instruction.html">
+                          <i class="icon_document_alt"></i>
+                          <span>Game Instruction</span>
+                      </a>
+                  </li>
+                  <li>                     
+                      <a class="" href="chart-chartjs.html">
+                          <i class="icon_piechart"></i>
+                          <span>Statistic</span>    
+                      </a>                     
+                  </li>           
+                  
+                  <li>
+                      <a class="" href="basic_table.html">
+                          <i class="icon_table"></i>
+                          <span>Table</span>
+                      </a>
+                  </li> 
+                  <li>
+                      <a class="" href="chat.html">
+                          <i class="icon_chat_alt"></i>
+                          <span>Chat</span>
+                      </a>
+                  </li> 
+                  <li>
+                      <a class="" href="feedback.html">
+                          <i class="icon_document_alt"></i>
+                          <span>Feedback</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="" href="aboutUs.html">
+                          <i class="fa fa-user-md"></i>
+                          <span>AboutUs</span>
+                      </a>
+                  </li> 
+                  
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--sidebar end-->
+      
+      <!--main content start-->
+      <section id="main-content">
+          <section class="wrapper">            
+              <!--overview start-->
+			  <div class="row">
+				<div class="col-lg-12">
+					<h3 class="page-header"><i class="fa fa-laptop"></i> Dashboard</h3>
+				</div>
+			</div>		
+           <div class="row">
+		    <div class="col-lg-9 col-md-12">
+					
+					<div class="panel panel-default">
+          <div class="panel panel-primary">
+						<div class="panel-heading">
+							<h2><i class="fa fa-map-marker red"></i><strong>Play Game!!</strong></h2>
+							<div class="panel-actions">
+								<a href="home.html#" class="btn-setting"><i class="fa fa-rotate-right"></i></a>
+								<a href="home.html#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
+								<a href="home.html#" class="btn-close"><i class="fa fa-times"></i></a>
+							</div>	
+              </div>
+						</div>
+						<div>
+              <div class="row">  
+                <div class="col-md-12" >
+                  <div class="embed-responsive embed-responsive-16by9" >
+                    <div id="control-panel">
+                        <span class="label label-primary">Lives:</span> <span id="numberOfLives" class="badge">3</span>
+                    </div>
+                    <div id="webgl-container"></div> 
+                  </div>
+                </div>
+              </div>       
+
+              <br>   
+
+              <div class="row">  
+                <div class="col-md-12" >
+                  <div>
+                    <ul id="messages"></ul>
+                    <form action="">
+                    <div class="col-md-4">
+                    <input id="m" autocomplete="off" class="form-control round-input"></div>
+                      <!--<input id="m" autocomplete="off" />--><a class="btn btn-info btn-sm" href="" onclick="return false;" title="Start Chatting!">Send</a>
+                    </form><br>
+                   <!--  <a class="btn btn-success btn-lg" href="" title="Adds Tree to the Field!" onclick="AddTree(); return false;">Add Tree!</a>
+                    <a class="btn btn-danger btn-lg" href="" title="Adds Wall to the Field!" onclick="AddWall(); return false;">Add Wall!</a> -->
+                    <!--Added Player customization-->
+                    <button onclick="ChangeToRectangle()">Rectangle</button>
+                    <button onclick="ChangeToSphere()">Sphere</button>
+                    <button onclick="ChangeToTriangle()">Triangle</button>
+                    <!--Adding color customization-->
+                    <button onclick="ChangeToBlue()">Blue</button>
+                    <button onclick="ChangeToRed()">Red</button>
+                    <button onclick="ChangeToGreen()">Green</button>    
+                    <br>                  
+                  </div>
+                </div>
+              </div>       
+            </div>
+	
+					</div>
+				</div>			 
+           </div>  
+            
+		  
+		  <!-- Today status end -->
+      <!--pagination-->
+		    <div class="row"><div class="col-md-4"></div>
+        <div class="col-md-6">
+            <div id="example"></div>
+ <div id="alert-content"></div>
+    <script type='text/javascript'>
+        var options = {
+            currentPage: 1,
+            totalPages: 8,
+           pageUrl: function(type, page, current){
+            var n = page.toString();
+            switch (n) {
+                    case "1":
+                        return "home.html";
+                    case "2":
+                        return "profile.html";
+                    case "3":
+                        return "instruction.html";
+                    case "4":
+                        return "chart-chartjs.html";
+                    case "5":
+                        return "basic_table.html";
+                    case "6":
+                        return "chat.html";
+                    case "7":
+                        return "feedback.html";
+                    case "8":
+                        return "aboutUs.html";
+                    }
+                
+            }
+        }
+
+        $('#example').bootstrapPaginator(options);
+    </script>
+        </div>
+        </div>
+			<!-- end pagination-->
+          <br><br>
+		
+
+      </section>
+      <!--main content end-->
+
+  </section>
+
+     <footer class="container-fluid text-center">
+  <a class="up-arrow" href="home.html" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>CopyRights &copy; LiveWires 2015 <a href="http://socket-io-280.herokuapp.com/" data-toggle="tooltip" title="visit live wires frogger">http://socket-io-280.herokuapp.com/</a></p> 
+</footer> 
+  <!-- container section start -->
+
+  <script>
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+    sessionStorage.setItem("lastname", "Smith");
+    document.getElementById('user_email_login').innerHTML = localStorage.getItem('user_email_login');
+} else {
+    document.getElementById('user_email_login').innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+</script>
+    <!-- javascripts -->
+    <script src="js/jquery.js"></script>
+	<script src="js/jquery-ui-1.10.4.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- nice scroll -->
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+    <!-- charts scripts -->
+    <script src="assets/jquery-knob/js/jquery.knob.js"></script>
+    <script src="js/jquery.sparkline.js" type="text/javascript"></script>
+    <script src="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
+    <script src="js/owl.carousel.js" ></script>
+    <!-- jQuery full calendar -->
+    <script src="js/fullcalendar.min.js"></script> <!-- Full Google Calendar - Calendar -->
+	<script src="assets/fullcalendar/fullcalendar/fullcalendar.js"></script>
+    <!--script for this page only-->
+    <script src="js/calendar-custom.js"></script>
+	<script src="js/jquery.rateit.min.js"></script>
+    <!-- custom select -->
+    <script src="js/jquery.customSelect.min.js" ></script>
+	<script src="assets/chart-master/Chart.js"></script>
+   
+    <!--custome script for all page-->
+    <script src="js/scripts.js"></script>
+    <!-- custom script for this page-->
+    <script src="js/sparkline-chart.js"></script>
+    <script src="js/easy-pie-chart.js"></script>
+	<script src="js/jquery-jvectormap-1.2.2.min.js"></script>
+	<script src="js/jquery-jvectormap-world-mill-en.js"></script>
+	<script src="js/xcharts.min.js"></script>
+	<script src="js/jquery.autosize.min.js"></script>
+	<script src="js/jquery.placeholder.min.js"></script>
+	<script src="js/gdp-data.js"></script>	
+	<script src="js/morris.min.js"></script>
+	<script src="js/sparklines.js"></script>	
+	<script src="js/charts.js"></script>
+	<script src="js/jquery.slimscroll.min.js"></script>
+  <script>
+
+      //knob
+      $(function() {
+        $(".knob").knob({
+          'draw' : function () { 
+            $(this.i).val(this.cv + '%')
+          }
+        })
+      });
+
+      //carousel
+      $(document).ready(function() {
+          $("#owl-slider").owlCarousel({
+              navigation : true,
+              slideSpeed : 300,
+              paginationSpeed : 400,
+              singleItem : true
+
+          });
+      });
+
+      //custom select box
+
+      $(function(){
+          $('select.styled').customSelect();
+      });
+	  
+	  /* ---------- Map ---------- */
+	$(function(){
+	  $('#map').vectorMap({
+	    map: 'world_mill_en',
+	    series: {
+	      regions: [{
+	        values: gdpData,
+	        scale: ['#000', '#000'],
+	        normalizeFunction: 'polynomial'
+	      }]
+	    },
+		backgroundColor: '#eef3f7',
+	    onLabelShow: function(e, el, code){
+	      el.html(el.html()+' (GDP - '+gdpData[code]+')');
+	    }
+	  });
+	});
+
+  </script>
+  
+  
+    
+    <script> 
+      var Client = {
+          MASTER: 0,
+          SLAVE: 1,
+      };
+      
+      var clientType;
+      var startGame = 0;
+      // localStorage.setItem("shape", "rectangle");
+      // localStorage.setItem("color", "green");
+    </script>
+
+    <script src="scripts/three.js"></script>
+    <script src="fonts/helvetiker_regular.typeface.js"></script>
+    <script src="scripts/support.js"></script>
+    <script src="scripts/PointerLockControls.js"></script>
+    <script src="scripts/physi.js"></script>
+    <script src="scripts/sceneSetup.js"></script>
+    <script src="scripts/gameControls.js"></script>
+    <script src="scripts/enemy.js"></script>
+    <script src="scripts/text.js"></script>
+    <script src="scripts/player.js"></script>
+    <script src="scripts/pointerLockSetup.js"></script>
+    <script src="scripts/_game.js"></script>
+    <script src="socketIO.js"></script>
+    <script src="/js/socket.io.js"></script>
+    <script>
+      var timeStart;
+      var timeEnd;
+      var socket = io();  
+      
+      function makeid()
+      {
+        /*var text = "";
+        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+        for( var i=0; i < 5; i++ )
+          text += possible.charAt(Math.floor(Math.random() * possible.length));*/
+        var text = "test";
+        text=localStorage.getItem('user_email_login');
+
+        return text;
+      }
+      var thisPlayerId = makeid();
+      player.setPlayerId( thisPlayerId );
+
+      $('form').submit(function(){
+        socket.emit( 'chatPair', $('#m').val() );
+        return false;
+      });
+      
+      socket.on( 'chatPair', function( msg )
+      {
+        
+        $( '#messages' ).append( $( '<li>' ).text( msg ) );
+        
+        if( msg === "start" )
+        {
+          game.resetScene();
+          console.log( "Start Game" );
+        }
+        else if( msg === "move" )
+        {
+          startGame = 1;
+        }
+        else if( msg === "stop" )
+        {
+          startGame = 0;
+        }
+      } );
+      
+      socket.on( 'GetRole', function( msg ) {
+        game.init();
+        if( msg === "master" )
+        {
+          clientType = Client.MASTER;          
+          player.createPlayer( 15, thisPlayerId, "default","default" );
+        }
+        else
+        {
+          clientType = Client.SLAVE;           
+          player.createPlayer( -15, thisPlayerId, "default","default" );
+        }
+        player.resetCamera();
+      } );   
+      
+      socket.on( 'StartGame', function( msg ) {
+          startGame = 1;
+          timeStart = new Date().getSeconds();
+          game.newGame();
+        
+          if( clientType === Client.MASTER )
+          {
+            //Added @ Player customization 
+            player.createPlayer( -15, msg.opponentId, "default" ,"default");
+            player.playerBroadcastCust();
+          }
+          else
+          {
+            //Added @ player customization
+            player.createPlayer( 15, msg.opponentId, "default" ,"default");
+            player.playerBroadcastCust();
+          }
+          // Game is starting
+          player.resetCamera();
+          player.startGameCount();
+      } );       
+      
+      socket.emit( 'GetRole', { "playerId": thisPlayerId } );
+    
+    </script>
+    <script>
+
+    </script>
+        function (){
+        player.changeShape( "rectangle" );
+      }
+    <script>
+    function clearLocal(){
+      localStorage.clear();
+    }
+      // Game communication
+      var objectTypeTree = 0;
+      var objectTypeWall = 1;
+      var objectTypePowerUp = 2;
+      
+      socket.on( 'AddObject', function( msg ) {
+        switch( msg.type )
+        {
+          case objectTypeTree:
+            sceneSetup.createTree( msg.gameObject.x , msg.gameObject.z );
+            break;
+            
+          case objectTypeWall:
+            enemy.createWall( msg.gameObject.x, msg.gameObject.y, msg.gameObject.z );
+            break;
+            
+          case objectTypePowerUp:
+            sceneSetup.createPowerUp( msg.gameObject.x , msg.gameObject.z );
+            break;
+            
+          default:
+            break;
+        }
+      } ); 
+      
+      function AddTree()
+      {
+          player.addTree();
+          UpdateCustomize( thisPlayerId, "tree" );
+      }
+      
+      function AddWall()
+      {
+          player.addWall();
+      }
+
+      function ChangeToRectangle(){
+        player.changeShape( "rectangle" );
+      }
+
+      function ChangeToSphere(){
+        player.changeShape( "sphere" );
+      }
+
+      function ChangeToTriangle(){
+        player.changeShape( "cylinder" );
+      }
+
+      function ChangeToBlue(){
+        player.changeColor( "blue");
+      }
+      
+      function ChangeToGreen(){
+        player.changeColor( "green" );
+      }
+      
+      function ChangeToRed(){
+        player.changeColor( "red" );
+      }
+      
+      function AddObject( type, objectToAdd )
+      {
+        socket.emit( 'AddObject', { "type": type, "gameObject": objectToAdd } ); 
+      }
+      
+      socket.on( 'CreateEnemy', function( msg ) {
+        enemy.createEnemy( msg.Origin, msg.Speed, msg.StartPos, msg.zPos );
+      } );
+      
+      function EmitCreateEnemy( origin, speed, startPos, zPos )
+      {        
+        socket.emit( 'CreateEnemy', { "Origin": origin, "Speed": speed, "StartPos": startPos, "zPos": zPos } );
+      }
+      
+      socket.on( 'UpdateEnemyPosition', function( msg ) {
+        enemy.updateEnemy( msg.positions );
+      } );
+      
+      function UpdateEnemyPosition( positions )
+      {
+        socket.emit( 'UpdateEnemyPosition', { "positions": positions } );
+      }
+      
+      socket.on( 'UpdatePlayerPosition', function( msg ) {
+        player.setPlayerPosition( msg.id, msg.playerPosition );
+      } ); 
+      
+      function UpdatePlayerPosition( id, playerPosition )
+      {
+        socket.emit( 'UpdatePlayerPosition', { "id": id, "playerPosition": playerPosition } ); 
+      }
+      
+      socket.on( 'GameWin', function( msg ) {
+        player.gameWin( msg.winnerId );
+        player.powerText( "Your time: " + msg.time + " seconds" );
+      } );
+      
+      function UpdateGameWinner( winnerId, looserId )
+      {
+        timeEnd = new Date().getSeconds();
+        socket.emit( 'GameWin', { "winnerId": winnerId, "looserId": looserId, "time": ( timeEnd - timeStart ) } ); 
+        console.log( timeEnd );
+        console.log( timeStart );
+        localStorage.setItem("winnerId", winnerId);
+            localStorage.setItem("looserId", looserId);
+            localStorage.setItem("time", (timeEnd - timeStart));
+      }
+      
+      function UpdatePowerUp( playerId, type )
+      {
+        socket.emit( 'PlayerPowerUp', { "playerId": playerId, "type": type } ); 
+      }
+      
+      function UpdateCustomize( playerId, type )
+      {
+        socket.emit( 'PlayerCustomize', { "playerId": playerId, "type": type } ); 
+      }
+      
+      socket.on( 'PlayerCharacterCustomize', function( msg ) {
+        player.playerCustomize( msg.playerId, msg.shape, msg.color );
+      } );
+
+      function UpdatePlayerCharacter(playerId, shape, color)
+      {
+        localStorage.setItem("shape", shape);
+            localStorage.setItem("color", color);
+        socket.emit('PlayerCharacterCustomize',{"playerId": playerId,"shape":shape, "color":color } );
+      }
+
+    </script>
+
+  </body>
+</html>

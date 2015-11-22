@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Feedback Page</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/modern-business.css" rel="stylesheet">
+		<!--<link href="css/pro.css" rel="stylesheet">-->
+		<link href="css/bootstrap-theme.css" rel="stylesheet">
+		<!-- font icon -->
+    <link href="css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- date picker -->
+    
+    <!-- color picker -->
+    
+    <!-- Custom styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+	</head>
+	<body>
+	<div class="row">
+	<div class="col-lg-4"></div>
+	<div class="col-lg-4">
+                      <section class="panel">
+                          <header class="panel-heading">
+                              Basic Forms
+                          </header>
+                          <div class="panel-body">
+                              <form role="form">
+                                  <div class="form-group">
+                                      <label align="left" class="labniv"for="firstname">User name:</label>
+		  							  <input type="text" name="firstname" id="firstname" placeholder="User Name" autofocus required>
+                                  </div>
+                                  <div class="form-group">
+                                      <label align="left" class="labniv" for="rating">Rate Us:</label>
+		  								<input list="ratings" name="rating" id="rating" required>
+		  								<datalist id="ratings">
+										  <option value="5">
+										  <option value="4">
+										  <option value="3">
+										  <option value="2">
+										  <option value="1">
+										  </datalist>
+                                  </div>
+                                  <div class="form-group">
+                                      <label align="left" class="labniv" for="feedback">Feedback:</label><br>
+		  								<textarea id="feedback" placeholder="Enter your feedback on the game" rows="4" cols="50" required></textarea>
+                                  </div>
+                                  <button type="submit" class="btn btn-primary">Submit</button>
+                                  <button type="reset" class="btn btn-default">Reset</button>
+                              </form>
+
+                          </div>
+                      </section>
+                  </div></div>
+		<!--<div class="container-fluid bg-page">
+		<div class="row" id="fbdivniv">
+		<center><h1 id="h1niv">Feedback</h1></center>
+		<div class="col-md-4" >
+		<div class="containerniv">
+		<form class="form-inline" role="form">
+		<div class="form-group">
+		  <label align="left" class="labniv"for="firstname">User name:</label>
+		  <input type="text" name="firstname" id="firstname" placeholder="User Name" autofocus required>
+		  <br><br>
+		  <label align="left" class="labniv" for="rating">Rate Us:</label>
+		  <input list="ratings" name="rating" id="rating" required>
+		  <br><br>
+		  <label align="left" class="labniv" for="feedback">Feedback:</label><br>
+		  <textarea id="feedback" placeholder="Enter you feedback on the game" rows="4" cols="50" required></textarea>
+		  <datalist id="ratings">
+		  <option value="5">
+		  <option value="4">
+		  <option value="3">
+		  <option value="2">
+		  <option value="1">
+		  </datalist>
+		  <br><br>
+		  <button type="submit" onsubmit="alert('Thank you for your Feedback!')" id="subniv">Submit!</button>
+		  </div>
+		</form>
+		</div></div></div></div>-->
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

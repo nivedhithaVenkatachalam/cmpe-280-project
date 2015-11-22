@@ -1,0 +1,24 @@
+#h1niv{
+			color:white;
+	}
+	#fbdivniv{
+		background-image: url("../fb1.jpg");
+		//background-repeat: no-repeat;
+	}
+	.labniv{
+		color:white;
+	}
+	#subniv{
+		background-color: red;
+		color:white;
+		//width:20px;
+		//height:70%;
+	}
+	.containerniv {
+        width: 500px;
+        clear: both;
+    }
+    .containerniv input {
+        width: 100%;
+        clear: both;
+    }
